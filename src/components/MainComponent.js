@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { Navbar, NavbarBrand } from "reactstrap";
+import { Redirect, Route, Switch } from "react-router-dom";
 import { DISHES } from "../shared/dish";
 import DishDetail from "./DishdetailComponent";
 import Footer from "./FooterComponent";
 import Header from "./HeaderComponent";
+import Home from "./HomeComponent";
 import Menu from "./MenuComponent";
 
 class Main extends Component {
@@ -11,18 +12,26 @@ class Main extends Component {
     super(props);
     this.state = {
       dishes: DISHES,
-      selectedDish: null,
+      // selectedDish: null,
     };
   }
-  onDishSelect(dishId) {
-    this.setState({ selectedDish: dishId });
-  }
+  // onDishSelect(dishId) {
+  //   this.setState({ selectedDish: dishId });
+  // }
   render() {
+    const HomePage = () => {
+      return (<Home />);
+    }
     return (
       <div>
         <Header />
-        <Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} />
-        <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} />
+        {/* <Menu dishes={this.state.dishes} onClick={(dishId) => this.onDishSelect(dishId)} />
+        <DishDetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} /> */}
+        <Switch>
+          <Route path='/home' component={HomePage}/>
+          <Route path='/menu' component={() => <Menu dishes={this.state.dishes}/>}/>
+          <Redirect to="/home"/>
+        </Switch>
         <Footer />
       </div>
     );
