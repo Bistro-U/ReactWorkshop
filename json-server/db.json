@@ -201,6 +201,54 @@
       "comment": "It's your birthday, we're gonna party!",
       "author": "25 Cent",
       "date": "2011-12-02T17:57:28.556094Z"
+    },
+    {
+      "id": 20,
+      "dishID": 0,
+      "rating": 1,
+      "comment": "good",
+      "author": "bin",
+      "date": "Sun Jul 17 2022 21:39:55 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 21,
+      "dishID": 0,
+      "rating": 1,
+      "comment": "1",
+      "author": "bin",
+      "date": "Sun Jul 17 2022 21:41:12 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 22,
+      "dishID": 0,
+      "rating": 1,
+      "comment": "good",
+      "author": "bin",
+      "date": "Sun Jul 17 2022 21:41:49 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 23,
+      "dishID": 0,
+      "rating": 1,
+      "comment": "good",
+      "author": "bin",
+      "date": "Sun Jul 17 2022 21:43:07 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 24,
+      "dishID": 0,
+      "rating": 1,
+      "comment": "good",
+      "author": "bin",
+      "date": "Sun Jul 17 2022 21:43:36 GMT+0700 (Indochina Time)"
+    },
+    {
+      "id": 25,
+      "dishId": 0,
+      "rating": "2",
+      "comment": "good",
+      "author": "bin",
+      "date": "Sun Jul 17 2022 21:47:39 GMT+0700 (Indochina Time)"
     }
   ],
   "promotions": [

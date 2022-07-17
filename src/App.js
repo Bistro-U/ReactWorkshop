@@ -5,6 +5,7 @@ import Main from "./components/MainComponent";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { ConfigureStore } from "./redux/configureStore";
+import TestFetchComponent from "./useFetch/TestFetchComponent";
 const store = ConfigureStore();
 class App extends Component {
   constructor(props) {
@@ -15,7 +16,8 @@ class App extends Component {
       <Provider store={store}>
         <BrowserRouter>
           <div className="App">
-            <Main />
+            {/* <Main /> */}
+            <TestFetchComponent/>
           </div>
         </BrowserRouter>
       </Provider>
